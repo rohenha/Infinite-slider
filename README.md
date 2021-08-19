@@ -1,1 +1,3 @@
-# Infinite-slider
+# Marquee slider
+
+Readme work in progress
