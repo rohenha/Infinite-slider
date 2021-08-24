@@ -148,7 +148,8 @@ export default class Marquee {
 
     const currentWidth = this.slides.length * singleWidth
     const deltaWidth = maxWidth - currentWidth
-    for (let i = 0; i < Math.round(deltaWidth / singleWidth); i += 1) {
+    const newElements = Math.ceil(deltaWidth / singleWidth)
+    for (let i = 0; i < newElements; i += 1) {
       const newNode = this.element.cloneNode(true)
       this.container.appendChild(newNode)
       this.slides.push({
